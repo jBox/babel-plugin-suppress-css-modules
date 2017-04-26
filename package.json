@@ -1,0 +1,48 @@
+{
+  "name": "babel-plugin-suppress-css-modules",
+  "version": "1.0.0",
+  "description": "Suppress css modules while import/require css/less/sass modules in js file.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "cross-env BABEL_ENV=babel babel test/index.js --out-file test/compiled.js"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": [
+      [
+        "./index.js",
+        {
+          "extensions": [
+            ".css",
+            ".scss",
+            ".less"
+          ]
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "cross-env": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jBox/babel-plugin-suppress-css-modules.git"
+  },
+  "keywords": [
+    "css-modules",
+    "babel-plugin"
+  ],
+  "author": "jBox",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jBox/babel-plugin-suppress-css-modules/issues"
+  },
+  "homepage": "https://github.com/jBox/babel-plugin-suppress-css-modules#readme"
+}

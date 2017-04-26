@@ -1,0 +1,12 @@
+{
+  "presets": [
+    "es2015"
+  ],
+  "env": {
+    "babel": {
+      "plugins": [
+        "./index.js"
+      ]
+    }
+  }
+}

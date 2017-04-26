@@ -1,0 +1,19 @@
+{
+    // Use IntelliSense to learn about possible Node.js debug attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [        
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "启动程序",
+            "program": "${workspaceRoot}\\node_modules\\babel-cli\\bin\\babel.js", // test.js --out-file test-compiled.js
+            "args": [
+                "test.js",
+                "--out-file",
+                "test-compiled.js"
+            ]
+        }
+    ]
+}
