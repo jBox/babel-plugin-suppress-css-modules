@@ -11,9 +11,9 @@ configure `.babelrc` file
 ```js
 {
   "env": {
-    "babel": {
+    "server": {
       "plugins": [
-        ["babel-plugin-suppress-css-modules", { 
+        ["suppress-css-modules", { 
             extensions: [".css", ".less", ".scss"] /*default: ".css", ".less", ".scss"*/ 
         }]
       ]

@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-suppress-css-modules",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Suppress css modules while import/require css/less/sass modules in js file.",
   "main": "index.js",
   "directories": {
